@@ -4,12 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/globalStyles.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Git Search</title>
   </head>
   <body>
-    <main></main>
-    <script src="index.js"></script>
+    <main>
+      <section class="colunm_left">
+        <h1>Git Search</h1>
+        <p>Encontre e se conecte com profissionais de forma rápida e fácil </p>
+        <div class="left_footerDiv">
+          <p>Achados Recentemente:</p>
+          <ul class="user_preview_ul">
+            <!-- <li class="user_preview_li"><a href=""><img  class="profile_photo_preview" src="../../img/pink.png" alt=""></a></li> -->
+          </ul>
+        </div>
+      </section>
+      <section class="colunm_right">
+        <h2>Procurar por um usuário</h2>
+        <div class="form">
+          <p class="user">Usuário github</p>
+          <input class="input" type="text" placeholder="Digite um usuário do github aqui...">
+          <p class="errorMessage hidden">Usuário não encontrado</p>
+          <button class="button_seePerfil">Ver perfil do github</button>
+        </div>
+      </section>
+    </main>
+    <script src="../../scripts/getApiData.js"></script>
+    <script src="../home/index.js"></script>
+    <script src="../../scripts/recentSearch.js"></script>    
   </body>
 </html>

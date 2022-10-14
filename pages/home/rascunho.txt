@@ -1,0 +1,18 @@
+- Criar a função pesquisar
+
+- quando começar a escrever o nome do nome:
+    --> ATIVAR BOTÃO DE pesquisar
+
+- quando clicar em pesquisar:
+    - deixar o botão rodando enquanto pesquisar
+    - se achar - redirecionar para página de perfil
+    - se não achar - aparecer mensagem de erro.
+
+- usuários pesquisados guardar em uma variável para inserir nos perfis pequisados
+    *Como eu armazeno só os 3 últimos?
+
+
+- lógica
+
+criar um array que armazena no local storage as pesquisados
+fazer um if()

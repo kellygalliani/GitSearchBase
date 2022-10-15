@@ -5,16 +5,14 @@ function searchProfile(){
     let searchButton = document.querySelector(".button_seePerfil")
     
     inputSearch.addEventListener("keypress", ()=>{
-        if(inputValue > 0){
-            searchButton.classList.add("button_seePerfil_light")
-            console.log(inputValue)
-        }else{
-            searchButton.classList.remove("button_seePerfil_light")
-        }    })
+        
+        searchButton.classList.add("button_seePerfil_light")
+        console.log(inputValue)
+    })
 
     searchButton.addEventListener("click", async (event)=>{
         let inputValue = document.querySelector(".input").value
-        console.log(inputValue)
+        
         event.preventDefault()
         await getData(inputValue)
         await getDataRepository(inputValue)

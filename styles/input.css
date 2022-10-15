@@ -1,0 +1,16 @@
+.input{
+    width: 316px;
+    height: 38px;
+    background: var(--color-grey-1);
+    color: var(--color-grey-7);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding-left: 1rem;
+}
+
+.input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.5);
+}

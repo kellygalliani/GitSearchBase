@@ -13,11 +13,11 @@ async function getData(input) {
             headers: headers
         })
         const usersJson = await users.json()
-
-        if(users.message == "Not Found"){
-            const nEncontrado = document.querySelector(".nEncontrado")
-            nEncontrado.innerText = "Usuário não encontrado"
-          }
+    
+        if(users.status != 200){
+            const errorText = document.querySelector(".errorMessage")
+            errorText.classList.remove("hidden")
+        }
 
         localStorage.setItem("id", usersJson.id || "")
         localStorage.setItem("avatar", usersJson.avatar_url || "")

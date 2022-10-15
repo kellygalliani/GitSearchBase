@@ -1,0 +1,58 @@
+.headerButtons > .brandButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 38px;
+    background-color: var(--color-brand-2);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-grey-7);
+    text-decoration: inherit; 
+}
+
+.headerButtons > .brandButton:hover {
+    background-color: var(--color-brand-1);
+}
+
+.headerButtons > .greyButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.563rem;
+    height: 38px;
+    background-color: var(--color-grey-3);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-grey-7);
+    text-decoration: inherit;  
+}
+.headerButtons > .greyButton:hover{
+    background-color: var(--color-grey-1);
+}
+
+.borderButton, .borderButton1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.563rem;
+    height: 38px;
+    background-color: var(--color-grey-2);
+    border-radius: 4px;
+    border: 1px solid var(--color-grey-7);;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-grey-7);
+}
+
+.cardLi:hover .cardButtons .borderButton{
+    background-color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);;
+}

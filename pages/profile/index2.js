@@ -7,6 +7,7 @@ async function Main(){
         let name = localStorage.getItem("name")
         let ocupation = localStorage.getItem("ocupation")
         let gitHubProfile = localStorage.getItem("gitHubProfile")
+
         return `
             <div class="user">
                 <img class="user.img" src="${avatar}" alt="">
@@ -16,8 +17,8 @@ async function Main(){
                 </div>
             </div>
             <div class="headerButtons">
-                <button class="brandButton" href="${gitHubProfile}">Ver Perfil</button>
-                <button class="greyButton" href="../home/index.html">Trocar de usuário</button>
+                <a class="brandButton" href="${gitHubProfile}">Ver Perfil</a>
+                <a class="greyButton" href="../home/index.html">Trocar de usuário</a>
             </div>
         `
         /* aqui falta colocar uma ação para o 
@@ -37,7 +38,7 @@ async function Main(){
             <p class="repository.description">${repo.description}</p>
             <div class="cardButtons">
                 <button class="borderButton" href="${repo.html_url}">Repositório</button>
-                <button class="borderButton">Demo</button>
+                <button class="borderButton1">Demo</button>
             </div>
         </li>
         `

@@ -5,7 +5,6 @@ const headers = {
 
 
 async function getData(input) {
-    
     try{
 
         const users = await fetch(`https://api.github.com/users/${input}`, {
@@ -17,6 +16,7 @@ async function getData(input) {
         if(users.status != 200){
             const errorText = document.querySelector(".errorMessage")
             errorText.classList.remove("hidden")
+            disableSpinner()
         }
 
         localStorage.setItem("id", usersJson.id || "")
@@ -34,9 +34,16 @@ async function getData(input) {
            ocupation:usersJson.bio || "",
            gitHubProfile:usersJson.html_url || "",
         }
+        let objetoExiste = history.find(element => element.id == usersJson.id)
+        
+        if(!objetoExiste){
+            history.push(objeto)
+            if(history.length >= 4){
+                history.splice(history[0], 1)
+            }
+            localStorage.setItem("historico", JSON.stringify(history))
+        };
 
-        history.push(objeto)
-        localStorage.setItem("historico", JSON.stringify(history))
 
         return usersJson
 

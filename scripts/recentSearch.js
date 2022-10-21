@@ -15,6 +15,10 @@ function userSearched(){
             let tagImg = document.createElement("img")
             let tagSpan = document.createElement("span")
 
+            tagLi.addEventListener("click", async () => {
+                getData(element.name)
+                window.location.replace("../profile/index.html")
+            })
             tagImg.src = element.avatar
             tagSpan.innerText = "Acessar este Perfil"
 
@@ -25,6 +29,9 @@ function userSearched(){
             tagLi.appendChild(tagA)
             tagA.append(tagImg, tagSpan)
             ulRecents.appendChild(tagLi)
+        }
+        if(index > 2){
+            historico.splice(index)
         }
     });
 

@@ -138,3 +138,13 @@ a:hover .accessProfile{
 .hidden{
     display: none;
 }
+
+.loading{
+    animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(1turn);
+      }
+  }

@@ -21,8 +21,6 @@ async function Main(){
                 <a class="greyButton" href="../home/index.html">Trocar de usuário</a>
             </div>
         `
-        /* aqui falta colocar uma ação para o 
-        botão ver perfil e trocar de usuário */
     }
 
     const headerLocal = document.querySelector(".header_profile")

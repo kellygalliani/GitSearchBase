@@ -1,6 +1,7 @@
 .cardLi{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.313rem;
     width: 23.813rem;
     min-height: 15.188rem;

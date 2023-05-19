@@ -17,7 +17,7 @@ async function Main(){
                 </div>
             </div>
             <div class="headerButtons">
-                <a class="brandButton" href="${gitHubProfile}">Ver Perfil</a>
+                <a class="brandButton" href="${gitHubProfile}" target="_blank">Ver Perfil</a>
                 <a class="greyButton" href="../home/index.html">Trocar de usuário</a>
             </div>
         `
@@ -33,10 +33,9 @@ async function Main(){
         return`
         <li class="cardLi">
             <h3 class="repository.name">${repo.name}</h3>
-            <p class="repository.description">${repo.description}</p>
             <div class="cardButtons">
-                <button class="borderButton" href="${repo.html_url}">Repositório</button>
-                <button class="borderButton1">Demo</button>
+                <a class="borderButton" href="${repo.html_url}">Repositório</a>
+                <a class="borderButton1" href="${repo.homepage}>Demo</button>
             </div>
         </li>
         `

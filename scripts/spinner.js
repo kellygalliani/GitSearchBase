@@ -1,4 +1,4 @@
-const button = document.querySelector(".button_seePerfil")
+const button = document.querySelector(".button_seePerfil_light")
 
 function insertSpinner(){
     button.innerHTML= ""

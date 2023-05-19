@@ -44,11 +44,10 @@ async function getData(input) {
             localStorage.setItem("historico", JSON.stringify(history))
         };
 
-
         return usersJson
 
     } catch(error){
-        return error /* refazer essa parte do erro */
+        return error 
     }
   
 }

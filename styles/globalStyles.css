@@ -24,3 +24,6 @@ body{
   background-color: var(--color-grey-2);
 
 }
+a{
+  text-decoration: none;
+}

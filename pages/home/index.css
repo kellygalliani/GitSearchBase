@@ -112,7 +112,9 @@ a:hover .accessProfile{
     line-height: 150%;
 }
 
-.button_seePerfil{
+
+
+.button_seePerfil_light:disabled {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,24 +129,39 @@ a:hover .accessProfile{
     line-height: 150%;
     color: rgba(255, 255, 255, 0.35);
     margin-top: 1.25rem;
-    cursor: pointer;
+    cursor:not-allowed;
 }
 
 .button_seePerfil_light{ 
-   background-color: var(--color-brand-1);
-   color: var(--color-grey-7);
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 93px;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 1.25rem;
+    cursor:pointer;
 }
 
 .hidden{
     display: none;
 }
 
-.loading{
+.loading {
     animation: spinner 1s infinite linear;
-}
-
-@keyframes spinner {
-    to {
-        transform: rotate(1turn);
-      }
+    transform-origin: center;
   }
+  
+  @keyframes spinner {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  

@@ -1,6 +1,6 @@
 if(!JSON.parse(localStorage.getItem("historico"))){
     let historico = []
-    localStorage.setItem("historico", JSON.stringify(historico))
+    /* localStorage.setItem("historico", JSON.stringify(historico)) */
 }
 
 
